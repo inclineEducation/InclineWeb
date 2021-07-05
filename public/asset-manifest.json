@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a6d005a9.chunk.css",
+    "main.js": "/static/js/main.cbae0d8f.chunk.js",
+    "main.js.map": "/static/js/main.cbae0d8f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dbb5c370.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dbb5c370.js.map",
+    "static/js/2.2ceeeeaa.chunk.js": "/static/js/2.2ceeeeaa.chunk.js",
+    "static/js/2.2ceeeeaa.chunk.js.map": "/static/js/2.2ceeeeaa.chunk.js.map",
+    "static/js/3.073cd07d.chunk.js": "/static/js/3.073cd07d.chunk.js",
+    "static/js/3.073cd07d.chunk.js.map": "/static/js/3.073cd07d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a6d005a9.chunk.css.map": "/static/css/main.a6d005a9.chunk.css.map",
+    "static/js/2.2ceeeeaa.chunk.js.LICENSE.txt": "/static/js/2.2ceeeeaa.chunk.js.LICENSE.txt",
+    "static/media/about-us.svg": "/static/media/about-us.40b5aee6.svg",
+    "static/media/App.css": "/static/media/incline-edu-group-photo.39668a66.jpg",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
+    "static/media/organize-resume.svg": "/static/media/organize-resume.a8ae2333.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbb5c370.js",
+    "static/js/2.2ceeeeaa.chunk.js",
+    "static/css/main.a6d005a9.chunk.css",
+    "static/js/main.cbae0d8f.chunk.js"
+  ]
+}
