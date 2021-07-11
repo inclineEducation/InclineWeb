@@ -56,7 +56,7 @@ function Navbar(){
         INCLINE EDUCATION
       </Link>
       <div className='menu-icon' onClick={handleClick}>
-        <i classname={click ? 'fas fa-times' : 'fas fa-bars'} />
+        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
       </div>
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li className='nav-item'>
