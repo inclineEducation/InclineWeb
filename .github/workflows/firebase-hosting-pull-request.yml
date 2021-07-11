@@ -28,7 +28,7 @@ jobs:
       run: CI= npm run build --if-present
       
     - name: Run tests
-      run: npm test --passWithNoTests
+      run: npm test
       
     - uses: FirebaseExtended/action-hosting-deploy@v0
       with:
