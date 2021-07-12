@@ -21,17 +21,10 @@
   font-size: 3rem;
 }
 
-.home {
-  background-image: url('./images/incline-edu-group-photo.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
+
 
 .about {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,7 +33,7 @@
 }
 
 .contact-us {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,7 +42,7 @@
 }
 
 .essentials {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,7 +51,7 @@
 }
 
 .panels {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,7 +60,7 @@
 }
 
 .mentorship {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,7 +69,7 @@
 }
 
 .incline-education {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,7 +79,7 @@
 
 
 .join-us {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,7 +88,7 @@
 }
 
 .accelerator {
-  background-image: url('./images/incline-edu-group-photo.jpg');
+  background-image: url('./images/group-original.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
