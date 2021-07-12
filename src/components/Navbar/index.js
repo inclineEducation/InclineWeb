@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, SmallBars, TitleLink } from './NavbarElements';
+import {Nav, NavLink, NavMenu, NavBtn, NavBtnLink,  TitleLink } from './NavbarElements';
 import Dropdown1 from '../Dropdown-service';
 import Dropdown2 from '../Dropdown-team';
 import Dropdown from '../Dropdown/index';
@@ -49,7 +49,6 @@ function Navbar(){
       <TitleLink to="/home" activeStyle >
         <h1>Incline Education</h1>
         </TitleLink>
-       <Bars /> 
         <NavMenu>
           <NavLink to='/home' activeStyle >
             Home
