@@ -5,19 +5,34 @@ import Icon2 from '../../images/organize-resume.svg';
 import Icon3 from '../../images/organize-resume.svg';
 import Icon4 from '../../images/organize-resume.svg';
 import Popups from '../InclineEduTeam/Popup';
+import { Modal } from './Modal';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+`
 
 const InclineTeam = () => {
-  const [buttonPopup, setButtonPopup] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(prev => !prev);
+  };
   return (
     <>
     <ServicesContainer id="team">
       <ServicesH1>Meet Our Team</ServicesH1>
       <ServicesWrapper>
-        <ServicesCard onClick={() => setButtonPopup(true)}>
+        <ServicesCard onClick={openModal}>
           <ServicesIcon src={Icon1}/>
           <ServicesP>Andy Chung</ServicesP>
         </ServicesCard>
-        <Popups trigger={buttonPopup} />
+        <Modal showModal={showModal} setShowModal={setShowModal}></Modal>
+      <GlobalStyle />
                 <ServicesCard>
           <ServicesIcon src={Icon2}/>
           <ServicesP>Anushka Gupta</ServicesP>
