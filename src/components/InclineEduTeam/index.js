@@ -13,6 +13,8 @@ import Talisha from '../../images/team/Talisha.jpg';
 import Varun from '../../images/team/Varun.jpg';
 import Jack from '../../images/team/Jack.jpg';
 import Hasan from '../../images/team/Hasan.jpg';
+import Selena from '../../images/team/Selena.jpg';
+import Grace from '../../images/team/Grace.jpg'
 import Popups from '../InclineEduTeam/Popup';
 import { Modal } from './Modal';
 import { createGlobalStyle } from 'styled-components';
@@ -59,7 +61,7 @@ const InclineTeam = () => {
           <ServicesP>Ella Koay</ServicesP>
         </ServicesCard>    
         <ServicesCard>
-          <ServicesIcon src={Anushka}/>
+          <ServicesIcon src={Grace}/>
           <ServicesP>Grace Zhang</ServicesP>
         </ServicesCard>
         <ServicesCard>
@@ -99,7 +101,7 @@ const InclineTeam = () => {
           <ServicesP>Roy Du</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Anushka}/>
+          <ServicesIcon src={Selena}/>
           <ServicesP>Selena Yang</ServicesP>
         </ServicesCard> 
         <ServicesCard>

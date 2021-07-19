@@ -16,9 +16,9 @@ const SignIn = () => {
     <FormLabel htmlFor='for'>Phone</FormLabel>
     <FormInput typed='password' required></FormInput>
     <FormLabel htmlFor='for'>Email</FormLabel>
-    <FormInput typed='password' required></FormInput>
+    <FormInput typed='email' required></FormInput>
     <FormLabel htmlFor='for'>Write Message</FormLabel>
-    <FormMessage typed='password' required></FormMessage>
+    <FormMessage typed='message' required></FormMessage>
     <FormButton type='submit'>Continue</FormButton>
   </Form>
 </FormContent>
