@@ -4,7 +4,7 @@ import Dropdown1 from '../Dropdown-service';
 import Dropdown2 from '../Dropdown-team';
 import Dropdown from '../Dropdown/index';
 
-function Navbar(){
+const Navbar = () => {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [drop, setDrop] = useState(false);
@@ -61,10 +61,10 @@ function Navbar(){
             Services <i className='fas fa-caret-down' />
           </NavLink>
           {dropdown && <Dropdown1 />}
-          <NavLink to='/team' activeStyle onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} >
+          <NavLink to='/team' activeStyle onMouseEnter={onMouseOn} onMouseLeave={onMouseOff} >
             Team<i className='fas fa-caret-down' />
-            {dropdown && <Dropdown2 />}
           </NavLink>
+          {dropdown && <Dropdown2 />}
           <NavLink to='/contact-us' activeStyle>
             Contact
           </NavLink>

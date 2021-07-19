@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
 import {ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper,ServicesCard, ServicesIcon, ServicesP, ServicesH3} from './TeamElements';
-import Icon1 from '../../images/organize-resume.svg';
-import Icon2 from '../../images/organize-resume.svg';
-import Icon3 from '../../images/organize-resume.svg';
-import Icon4 from '../../images/organize-resume.svg';
+import Anushka from '../../images/team/Anushka.jpg';
+import Andy from '../../images/team/Andy.jpg';
+import Chris from '../../images/team/Chris.jpg';
+import Danilo from '../../images/team/Danilo.jpg';
+import Ella from '../../images/team/Ella.jpg';
+import Roy from '../../images/team/Roy.png';
+import Nusair from '../../images/team/Nusair.jpg';
+import Matheson from '../../images/team/Matheson.jpg';
+import Michelle from '../../images/team/Michelle.jpg';
+import Talisha from '../../images/team/Talisha.jpg';
+import Varun from '../../images/team/Varun.jpg';
+import Jack from '../../images/team/Jack.jpg';
+import Hasan from '../../images/team/Hasan.jpg';
 import Popups from '../InclineEduTeam/Popup';
 import { Modal } from './Modal';
 import { createGlobalStyle } from 'styled-components';
@@ -28,77 +37,77 @@ const InclineTeam = () => {
       <ServicesH1>Meet Our Team</ServicesH1>
       <ServicesWrapper>
         <ServicesCard onClick={openModal}>
-          <ServicesIcon src={Icon1}/>
+          <ServicesIcon src={Andy}/>
           <ServicesP>Andy Chung</ServicesP>
         </ServicesCard>
         <Modal showModal={showModal} setShowModal={setShowModal}></Modal>
       <GlobalStyle />
                 <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Anushka}/>
           <ServicesP>Anushka Gupta</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Chris}/>
           <ServicesP>Chris Ng</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Danilo}/>
           <ServicesP>Danilo Angulo-Molina</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Ella}/>
           <ServicesP>Ella Koay</ServicesP>
         </ServicesCard>    
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Anushka}/>
           <ServicesP>Grace Zhang</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Hasan}/>
           <ServicesP>Hasan Altaf</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Anushka}/>
           <ServicesP>Ihor Parkhomenko</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Jack}/>
           <ServicesP>Jack He</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Anushka}/>
           <ServicesP>Keana Yu</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Anushka}/>
           <ServicesP>Mark Long</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Matheson}/>
           <ServicesP>Matheson Parmar</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Michelle}/>
           <ServicesP>Michelle Lin</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Nusair}/>
           <ServicesP>Nusair Islam</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Roy}/>
           <ServicesP>Roy Du</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Anushka}/>
           <ServicesP>Selena Yang</ServicesP>
         </ServicesCard> 
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Talisha}/>
           <ServicesP>Talisha Griebach</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2}/>
+          <ServicesIcon src={Varun}/>
           <ServicesP>Varun Nair</ServicesP>
         </ServicesCard>             
       </ServicesWrapper>

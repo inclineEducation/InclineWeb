@@ -1,37 +1,41 @@
-import React, { useState } from 'react';
-import {DropDownContainer, DropDownHeader, DropDownList, DropDownListContainer, Main, ListItem, options } from './DropdownElements';
+import React from "react";
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
 
-export default function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
-
-  const toggling = () => setIsOpen(!isOpen);
-
-  const onOptionClicked = value => () => {
-    setSelectedOption(value);
-    setIsOpen(false);
-    console.log(selectedOption);
-  };
-
+const CustomDropDown = props => {
+  const {
+    handleMouseEnter,
+    handleMouseLeave,
+    handleToggle,
+    options,
+    name,
+    stateKeys
+  } = props;
   return (
-    <Main>
-      <h1>Custom Select/dropdown</h1>
-      <DropDownContainer>
-        <DropDownHeader onClick={toggling}>
-          {selectedOption || "Mangoes"}
-        </DropDownHeader>
-        {isOpen && (
-          <DropDownListContainer>
-            <DropDownList>
-              {options.map(option => (
-                <ListItem onClick={onOptionClicked(option)} key={Math.random()}>
-                  {option}
-                </ListItem>
-              ))}
-            </DropDownList>
-          </DropDownListContainer>
-        )}
-      </DropDownContainer>
-    </Main>
+    <div className="dropdown-container">
+      <Dropdown
+        className="d-inline-block"
+        onMouseOver={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        isOpen={stateKeys[name]}
+        toggle={handleToggle}
+      >
+        <DropdownToggle name={name} caret>
+          Dropdown1
+        </DropdownToggle>
+        <DropdownMenu>
+          {options.length &&
+            options.map(({ header, title }) => (
+              <DropdownItem header={header}>{title}</DropdownItem>
+            ))}
+        </DropdownMenu>
+      </Dropdown>
+    </div>
   );
-}
+};
+
+export default CustomDropDown;
