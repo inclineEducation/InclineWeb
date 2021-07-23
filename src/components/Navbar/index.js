@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Nav, NavLink, NavMenu, NavBtn, NavBtnLink,  TitleLink } from './NavbarElements';
 import Dropdown1 from '../Dropdown-service';
 import Dropdown2 from '../Dropdown-team';
-import Dropdown from '../Dropdown/index';
+import CustomDropdown from '../Dropdown/index';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -60,11 +60,11 @@ const Navbar = () => {
           onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             Services <i className='fas fa-caret-down' />
           </NavLink>
-          {dropdown && <Dropdown1 />}
+          {dropdown && <CustomDropdown />}
           <NavLink to='/team' activeStyle onMouseEnter={onMouseOn} onMouseLeave={onMouseOff} >
             Team<i className='fas fa-caret-down' />
           </NavLink>
-          {dropdown && <Dropdown2 />}
+          {dropdown && <CustomDropdown />}
           <NavLink to='/contact-us' activeStyle>
             Contact
           </NavLink>

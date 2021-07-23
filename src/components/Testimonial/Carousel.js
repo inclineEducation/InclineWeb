@@ -9,49 +9,62 @@ import Grace from '../../images/team/Grace.jpg'
 import styled from 'styled-components';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Testimonial from './CarouselElements';
+import Card from './CarouselElements';
 
-const images = [Anushka, Andy, Chris, Grace];
-
-const Img = styled.img`
-  height: 150px;
-  width: 30px;
-  min-width: 300px;
-  max-width: 100%;
-`;
-
-const CarouselContainer = styled.div`
-height: 800px;
-width: 800px;
+const Section = styled.div`
+display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
-background: #fff;
-padding: 30px;
+width: 100%;
+padding: 5rem 0;
+`
+const Title = styled.h1`
+display: inline-block;
+font-size: calc(1rem + 1.5vw);
+margin-top: 1rem;
+position: relative;
+
+&::before{
+  content:"";
+  height: 1px;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-bottom: 2px solid var(--purple);
+  transform: translate(-50%);
 }
 `
+const Carousal = styled.div`
+width: 90vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "black" }}
-      onClick={onClick}
-    />
-  );
+@media only Screen and (max-width:40em){
+  width: 90vw;
+  .slick-slider .slick-arrow{
+    display: none;
+  }
 }
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
+.slick-slider .slick-arrow:before{
+  color: black;
+  font-size: 1.5rem;
 }
 
-
+.slick-slide.slick-active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+`
 class Carousel extends Component {
     render() {
     const settings = {
@@ -59,50 +72,50 @@ class Carousel extends Component {
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 1,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
       autoplay: true,
-      speed: 5000,
-      autoplaySpeed: 500,
-      cssEase: "linear"
+      speed: 500,
+      autoplaySpeed: 2000,
+      cssEase: "linear",
+      lazyload: true, 
+      initialSlide: 2
     };
     return (
       <div>
-        <CarouselContainer>
-        <h2> Responsive </h2>
+        <Section>
+          <Title>Testimonials</Title>
+        <Carousal>
         <Slider {...settings}>
-          <div>
-            <Img src={Anushka} alt="Anushka" />
-            <h3>1</h3>
-          </div>
-          <div>
-            <Img src={Anushka} alt="Anushka" />
-            <h3>2</h3>
-          </div>
-          <div>
-            <Img src={Anushka} alt="Anushka" />
-            <h3>3</h3>
-          </div>
-          <div>
-            <Img src={Anushka} alt="Anushka" />
-            <h3>4</h3>
-          </div>
-          <div>
-            <Img src={Anushka} alt="Anushka" />
-            <h3>5</h3>
-          </div>
-          <div>
-            <Img src={Anushka} alt="Anushka" />
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
+            <Card
+            name="Daniel Wang" 
+            text="Prospective university freshmen like me often have too many questions and are usually confused about the process of \
+		transitioning from high school to university life. IE Mentorship was able to tailor to my needs and quickly match a requested mentor \
+		that has similar interests, backgrounds, and career interests as me. As a completely free service made by students for students, \
+		IE Mentorship is a valuable platform to help you out and make friends that would benefit you long afterwards!"
+    image="Anushka"/>
+            <Card 
+            name="Tiffany Anderson" 
+            text="Chris and his colleagues were professional, fun, and very informative. My students thoroughly enjoyed their visit!"
+            image="Anushka"
+            />
+            <Card 
+            name="Anushka" 
+            text="hello"
+            image="Andy"
+            />
+            <Card 
+            name="Anushka" 
+            text="hello"
+            image="Anushka"
+
+            />
+            <Card 
+            name="Anushka" 
+            text="hello"
+
+            />
         </Slider>
-        </CarouselContainer>
+        </Carousal>
+      </Section>
       </div>
     );
   }
