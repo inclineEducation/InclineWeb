@@ -14,6 +14,7 @@ import Essentials from './components/pages/Essentials';
 import InclineEducation from './components/pages/Incline-Education';
 import JoinUs from './components/pages/Join-Us';
 import InfoSection from './components/InfoSection/index';
+
 import { homeObjOne, homeObjTwo } from './components/InfoSection/Data';
 import Services from './components/Services/index';
 import Footer from './components/Footer/index';
