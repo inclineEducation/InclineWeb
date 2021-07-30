@@ -1,12 +1,12 @@
 export const MenuItemsteam = [
   {
     title: 'Incline Education',
-    path: '/incline-education',
+    path: '/team',
     cName: 'dropdown-link'
   },
     {
     title: 'Advisors',
-    path: '/incline-education',
+    path: '/advisor',
     cName: 'dropdown-link'
   },
     {

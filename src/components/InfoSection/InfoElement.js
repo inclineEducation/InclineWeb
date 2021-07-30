@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const InfoContainer = styled.div`
 color: #fff;
@@ -78,13 +78,21 @@ grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`
   justify-content: flex-start;
   `
 
+    const move = keyframes`
+  0% { transform: translateY(-5px) }
+  50% { transform: translateY(10px) translateX(10px) }
+  100% { transform: translateY(-5px) }
+  `;
+
   export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  animation: ${move} 2.5 ease infinite;
   `
 
   export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  
   `

@@ -52,10 +52,12 @@ export const ProductCard = styled.div`
 `;
 
 export const ProductImg = styled.img`
-  height: 150px;
-  width: 30px;
+  width: 100px;
+  height: 200px;
   min-width: 300px;
   max-width: 100%;
+  object-fit: contain;
+  
 `;
 
 export const ProductsHeading = styled.h1`

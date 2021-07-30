@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import React from 'react';
-import Navbar from './components/Navbar/index';
+import Navbar from './components/Navbar';
 import { Button } from './components/Button';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -42,6 +42,7 @@ function App() {
           <Route path='/signin' exact component={SigninPage}/>
           <Route path='/signup' exact component={SignupPage}/>
           <Route path='/team' exact component={InclineTeam}/>
+          <Route path='/advisor' exact component={InclineTeam} />
         </Switch>
       </Router>
       <Footer />

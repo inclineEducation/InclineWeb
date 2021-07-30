@@ -9,6 +9,10 @@ import Lily from '../../images/company/Lily.png';
 import Microsoft from '../../images/company/Microsoft.png';
 import PWC from '../../images/company/PWC.png';
 import RBC from '../../images/company/RBC.png';
+import Ideal from '../../images/partner/ideal_mini.jpg';
+import John from '../../images/partner/john_oliver.png';
+import Templeton from '../../images/partner/templeton.jpg';
+import VLN from '../../images/partner/vln.png';
 
 export const companyData = [
   {
@@ -59,5 +63,25 @@ export const companyDataThree = [
     {
     img: RBC,
     alt: 'RBC'
+  }
+];
+
+export const companyDataFour = [
+  {
+    img: Ideal,
+    alt: 'Ideal Mini School'
+  },
+  {
+    img: John,
+    alt: 'John Oliver'
+  },
+  {
+    img: Templeton,
+    alt: 'Templeton'
+
+  },
+    {
+    img: VLN,
+    alt: 'VLN'
   }
 ];

@@ -13,17 +13,17 @@ export const Background = styled.div`
 
 export const ModalWrapper = styled.div`
   width: 800px;
-  height: 500px;
+  height: 550px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  z-index: 10;
   border-radius: 10px;
   margin: auto;
   justify-content: center;
+  z-index: 1;
 `;
 
 const ModalImg = styled.img`
@@ -64,4 +64,15 @@ export const CloseModalButton = styled(MdClose)`
   height: 32px;
   padding: 0;
   z-index: 10;
+`;
+
+export const ProfileImage = styled.img`
+border-radius: 50%;
+width: 17%;
+padding-bottom: 20px;
+
+&:hover{
+  transform: scale(1.08);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 `;

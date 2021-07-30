@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import {Nav, NavLink, NavMenu, NavBtn, NavBtnLink,  TitleLink } from './NavbarElements';
 import Dropdown1 from '../Dropdown-service';
 import Dropdown2 from '../Dropdown-team';
-import CustomDropdown from '../Dropdown/index';
+import SimpleDropdown from '../Dropdown/index';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [drop, setDrop] = useState(false);
 
-  const handleClick = () => setClick(!click);
+ const handleClick = () => setClick(!click);
+
+  const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
@@ -28,7 +30,7 @@ const Navbar = () => {
   };
 
     const onMouseOn = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth > 960) {
       setDrop(false);
     } else {
       setDrop(true);
@@ -56,15 +58,14 @@ const Navbar = () => {
           <NavLink to='/about' activeStyle>
             About
           </NavLink>
-          <NavLink to='/services' activeStyle
-          onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-            Services <i className='fas fa-caret-down' />
+          <NavLink to='/services' activeStyle onMouseLeave={onMouseLeave}>
+            Services <i className='fas fa-caret-down'onMouseEnter={onMouseEnter} />
           </NavLink>
-          {dropdown && <CustomDropdown />}
-          <NavLink to='/team' activeStyle onMouseEnter={onMouseOn} onMouseLeave={onMouseOff} >
-            Team<i className='fas fa-caret-down' />
+          {dropdown && <SimpleDropdown />}
+          <NavLink to='/team' activeStyle onMouseLeave={onMouseOff} >
+            Team<i className='fas fa-caret-down' onMouseEnter={onMouseOn} />
           </NavLink>
-          {dropdown && <CustomDropdown />}
+          {dropdown && <SimpleDropdown />}
           <NavLink to='/contact-us' activeStyle>
             Contact
           </NavLink>

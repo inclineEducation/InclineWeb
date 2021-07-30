@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const CARD = styled.div`
-background-color: blue;
+background-color: black;
 color: white;
 height: calc(8rem + 12vw);
 width: calc(9rem + 12vw);
@@ -10,6 +10,7 @@ margin-top: calc(5rem + 5vw);
 justify-content: center;
 height: 500px;
 width: 600px;
+textAlign: 'center'
 `
 
 const Image = styled.div`
@@ -24,24 +25,28 @@ left: 50%;
 bottom: 80%;
 transform: translate(-50%);
 border-radius: 50%;
-filter: drop-shadow(0px -3px 3px var(--nav2));
+filter: drop-shadow(0px -3px 3px var(white));
 `;
 
 const Text = styled.h4`
 padding: 100px calc(1rem + 3vw);
 font-size: calc(0.6rem + 0.5vw);
 text-align: center;
-color: black;
+color: white;
 `;
 
 const NAME = styled.h3`
-color: pink;
+color: white;
 font-size: calc(0.5rem + 2vw);
 justify-content: center;
 text-align: center;
-position: absolute;
-padding: calc(1rem + 3vw) calc(1rem + 3vw);
-
+position: fixed;
+bottom: 100px;
+align-items: center;
+justify-content: center;
+vertical-align: middle;
+display: flex;
+textAlign: 'center'
 `;
 
 const Card = ({ name, text, image}) => {

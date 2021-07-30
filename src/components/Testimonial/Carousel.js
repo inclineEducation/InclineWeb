@@ -33,7 +33,7 @@ position: relative;
   position: absolute;
   left: 50%;
   bottom: 0;
-  border-bottom: 2px solid var(--purple);
+  border-bottom: 4px solid black;
   transform: translate(-50%);
 }
 `
@@ -98,19 +98,29 @@ class Carousel extends Component {
             image="Anushka"
             />
             <Card 
-            name="Anushka" 
-            text="hello"
+            name="Arundhati Arun Thampi" 
+            text="Incline Education’s accelerator program helped me to feel less intimidated by the recruitment process. The mentors were extremely 
+                  friendly and helpful which at the end of the day helped me to feel more confident in myself and understand areas that I need to begin working 
+                  on. It is a very valuable experience for students who are not sure about how to approach the recruitment process or do not have an idea about 
+                  what they would like to do in the future."
             image="Andy"
             />
             <Card 
-            name="Anushka" 
-            text="hello"
+            name="Selena Yang" 
+            text="As a first year student who was unfamiliar with the process of finding internships, the Accelerator Program helped me gain an in-depth 
+                  understanding of different elements ranging from resumes to networking, while also being able to tailor to my specific career interests. With 
+                  personalized feedback and the team’s insights in the recruiting process, I found it very helpful as I could pinpoint areas that I could work on 
+                  and learnt specific ways that I could improve. Both the team and the other cohort members were welcoming, supportive, and personable. Over the 
+                  course of several weeks, I learnt a lot and really enjoyed getting to make new friends and connections!"
             image="Anushka"
 
             />
             <Card 
-            name="Anushka" 
-            text="hello"
+            name="Ihor Parkhomenko" 
+            text="This program helped me connect with incredibly talented students and learn from them about the internship application process. It was such
+                a delight to talk with my mentors about practical tips for writing resumes and nailing interview questions, and I'm very much looking forward to
+                applying those tips in my future applications. Thank you for this unique opportunity."
+            image= "Anushka"
 
             />
         </Slider>
