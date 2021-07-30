@@ -274,7 +274,7 @@ const InfoPanel = () => {
             {
               y: 400,
 
-              duration: 2,
+              duration: 4,
 
               ease: "power2",
               scrollTrigger: {

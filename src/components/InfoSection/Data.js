@@ -32,3 +32,35 @@ export const homeObjTwo = {
   primary: true,
   darkText:true
 };
+
+export const homeObjThree = {
+  id: '/mentorship',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: '',
+  headline: 'What is the Incline Education Mentorship Program?',
+  description: 'The Incline Education Mentorship Program is a platform for high-school students to be matched with a post-secondary student to guide them in their academic and career endeavours. You can sign up to be either a mentor or a mentee, and we will pair you up with someone who matches your interests and aspirations.',
+  buttonLabel: 'Sign Up To Meet a Mentor',
+  imgStart: true,
+  img: require('../../images/about-us.svg').default,
+  alt: 'blank',
+  primary: true,
+  darkText:true
+};
+
+export const homeObjFour = {
+  id: '/mentorship',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: false,
+  topLine: '',
+  headline: 'How Does It Work?',
+  description: 'Incline Education is a team of university students from various faculties who have come together for the sole purpose of helping high school students achieve more out of their post-secondary experience.',
+  buttonLabel: 'Sign Up To Mentor A Student',
+  imgStart: false,
+  img: require('../../images/about-us.svg').default,
+  alt: 'blank',
+  primary: false,
+  darkText: false
+};
