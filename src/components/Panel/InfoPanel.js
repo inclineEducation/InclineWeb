@@ -3,9 +3,6 @@ import { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Tube from "../../images/3dtube.png";
-import Cone from "../../images/3dtriangle.png";
-import Capsule from "../../images/3dcapsule.png";
 
 import TextBlock from "./TextBlock";
 import SvgBlock from "./SvgBlock";
