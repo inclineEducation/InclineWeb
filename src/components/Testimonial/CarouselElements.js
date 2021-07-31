@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const CARD = styled.div`
-background-color: black;
+background-color: white;
 color: white;
 height: calc(8rem + 12vw);
 width: calc(9rem + 12vw);
@@ -32,11 +32,11 @@ const Text = styled.h4`
 padding: 100px calc(1rem + 3vw);
 font-size: calc(0.6rem + 0.5vw);
 text-align: center;
-color: white;
+color: black;
 `;
 
 const NAME = styled.h3`
-color: white;
+color: black;
 font-size: calc(0.5rem + 2vw);
 justify-content: center;
 text-align: center;

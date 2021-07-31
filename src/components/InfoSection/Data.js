@@ -64,3 +64,35 @@ export const homeObjFour = {
   primary: false,
   darkText: false
 };
+
+export const homeObjFive = {
+  id: '/accelerator',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: false,
+  topLine: '',
+  headline: 'Purpose Of This Program',
+  description: 'The Incline Education Accelerator Program is a one-of-a-kind program that aims to help 1st year university students across different faculties land an internship. With an excellent team of high performing student mentors and industry professionals, we hope to create a cohort of passionate and driven students ready to take the next step in their careers with our help. The best part? It is completely free!',
+  imgStart: false,
+  img: require('../../images/about-us.svg').default,
+  alt: 'blank',
+  primary: false,
+  darkText: false
+};
+
+export const homeObjSix = {
+  id: '/accelerator',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: false,
+  topLine: '',
+  headline: 'Our Goal For You',
+  description: 'The ultimate aim of our program is to propel mentees towards their first internship experience in the real world in their desired field and industry. Although we do not guarantee placements, our program’s structure and resources have been crafted such that each mentee’s chances of securing spots are uniquely maximized.',
+  buttonLabel: 'Sign Up To Mentor A Student',
+  imgStart: true,
+  img: require('../../images/about-us.svg').default,
+  alt: 'blank',
+  primary: false,
+  darkText: false
+};
+

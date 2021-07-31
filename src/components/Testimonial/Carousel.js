@@ -25,6 +25,7 @@ display: inline-block;
 font-size: calc(1rem + 1.5vw);
 margin-top: 1rem;
 position: relative;
+color: white;
 
 &::before{
   content:"";
