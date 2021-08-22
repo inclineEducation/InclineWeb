@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import '../components/Navbar.css';
-import Dropdown1 from './Dropdown-service';
-import Dropdown2 from './Dropdown-team';
+import Dropdown from './Dropdown';
 import logo from './favicon.png';
+import { MenuItemsteam } from './MenuItems-team';
+import { MenuItemsservice } from './MenuItemsservice';
 
 function Navbar(){
   const [click, setClick] = useState(false);
@@ -23,7 +24,7 @@ function Navbar(){
     }
   };
 
-    const onMouseLeave = () => {
+  const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
     } else {
@@ -31,7 +32,7 @@ function Navbar(){
     }
   };
 
-    const onMouseOn = () => {
+  const onMouseOn = () => {
     if (window.innerWidth < 960) {
       setDrop(false);
     } else {
@@ -39,7 +40,7 @@ function Navbar(){
     }
   };
 
-    const onMouseOff = () => {
+  const onMouseOff = () => {
     if (window.innerWidth < 960) {
       setDrop(false);
     } else {
@@ -69,18 +70,18 @@ function Navbar(){
           </Link>
         </li>
         <li className='nav-item' onMouseLeave={onMouseLeave} >
-          <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-            Services <i className='fas fa-caret-down' onMouseEnter={onMouseEnter}/>
+          <Link to='/' className='nav-links' onClick={closeMobileMenu} onMouseEnter={onMouseEnter}>
+            Services <i className='fas fa-caret-down' />
           </Link>
-          {dropdown && <Dropdown1/>}
+          {dropdown && <Dropdown items={MenuItemsservice}/>}
         </li>
         <li className='nav-item' onMouseLeave={onMouseOff}>
-          <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-            Team <i className='fas fa-caret-down' onMouseEnter={onMouseOn}/>
+          <Link to='/' className='nav-links' onClick={closeMobileMenu} onMouseEnter={onMouseOn}>
+            Team <i className='fas fa-caret-down' />
           </Link>
-          {drop && <Dropdown2/>}
+          {drop && <Dropdown items={MenuItemsteam}/>}
         </li>
-                <li className='nav-item'>
+        <li className='nav-item'>
           <Link to='/contact-us' className='nav-links' onClick={closeMobileMenu}>
             Contact Us
           </Link>
