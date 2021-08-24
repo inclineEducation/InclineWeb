@@ -1,8 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import SearchBar from '../SearchBar/SearchBar';
-import data from '../SearchBar/data.json';
-import Blog from '../SearchBar/Blog';
+import Blog from '../Blog/Blog';
 
 export default function Essentials() {
   return (

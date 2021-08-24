@@ -22,6 +22,7 @@ import SignIn from './components/Signin/index';
 import SigninPage from './components/pages/Signin';
 import SignupPage from './components/pages/Signup';
 import InclineTeam from './components/pages/Team';
+import BlogPost from './components/Blog/Blog Posts/BlogPost';
 
 function App() {
   
@@ -43,6 +44,7 @@ function App() {
           <Route path='/signup' exact component={SignupPage}/>
           <Route path='/team' exact component={InclineTeam}/>
           <Route path='/advisor' exact component={InclineTeam} />
+          <Route path='/blogpost' exact component={BlogPost} />
         </Switch>
       </Router>
       <Footer />

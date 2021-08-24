@@ -43,6 +43,23 @@ export const companyDataTwo = [
     {
     img: KPMG,
     alt: 'KPMG'
+  },
+  {
+    img: Lily,
+    alt: 'Lily'
+  },
+  {
+    img: Microsoft,
+    alt: 'Microsoft'
+  },
+  {
+    img: PWC,
+    alt: 'PWC'
+
+  },
+    {
+    img: RBC,
+    alt: 'RBC'
   }
 ];
 

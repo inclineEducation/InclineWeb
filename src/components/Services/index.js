@@ -4,6 +4,16 @@ import Icon1 from '../../images/organize-resume.svg';
 import Icon2 from '../../images/organize-resume.svg';
 import Icon3 from '../../images/organize-resume.svg';
 import Icon4 from '../../images/organize-resume.svg';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+`;
 
 const Services = () => {
   return (
@@ -21,11 +31,13 @@ const Services = () => {
           <ServicesH2>Mentorship</ServicesH2>
           <ServicesP>Personalized mentorship from a student with similar academic/career goals.</ServicesP>
         </ServicesCard>
+        <StyledLink to = '/essentials'>
                 <ServicesCard>
           <ServicesIcon src={Icon3}/>
           <ServicesH2>Essentials</ServicesH2>
           <ServicesP>Weekly educational articles to help you overcome all of your post-secondary challenges.</ServicesP>
         </ServicesCard>
+        </StyledLink>
                 <ServicesCard>
           <ServicesIcon src={Icon4}/>
           <ServicesH2>Accelerator</ServicesH2>

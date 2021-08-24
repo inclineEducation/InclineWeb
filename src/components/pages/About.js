@@ -25,7 +25,6 @@ export default function About() {
       <Services />
       <Companies heading='As Seen In' data={companyData} />
       <Companies heading='Our Mentors Have Been At' data={companyDataTwo} />
-      <Companies heading='' data={companyDataThree} />
       <Carousel />
       <Contact />
     </>

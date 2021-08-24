@@ -23,7 +23,6 @@ export default function Mentorship() {
       </HeroSection>
       <Accordion />
       <Companies heading='Our Mentors Have Been At' data={companyDataTwo} />
-      <Companies heading='' data={companyDataThree} />
       <Services />
       <Contact />
     </>

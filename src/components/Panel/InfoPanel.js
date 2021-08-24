@@ -10,6 +10,7 @@ import SvgBlock from "./SvgBlock";
 // const TextBlock = lazy(() => import("../../components/TextBlock"));
 // const SvgBlock = lazy(() => import("../../components/SvgBlock"));
 
+
 const ServiceSection = styled.section`
   width: 100vw;
   /* background-color: #0a0b10; */
@@ -20,7 +21,7 @@ const ServiceSection = styled.section`
   justify-content: center;
   position: relative;
   padding-top: 20rem;
-`;
+`
 
 const Background = styled.div`
   display: flex;

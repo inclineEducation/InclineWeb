@@ -13,7 +13,7 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 80vh;
+  height: 100vh;
   background: black;
 
   @media screen and (max-width: 768px){
@@ -27,7 +27,6 @@ const AccordionSection = styled.div`
 const Container = styled.div`
   position: absolute;
   top: 30%;
-  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
   justify-content: center;
   align-items: center;
 `;
@@ -51,8 +50,8 @@ const Wrap = styled.div`
 `;
 
 const Dropdown = styled.div`
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   width: 100%;
   height: 100px;
   display: flex;
@@ -62,12 +61,15 @@ const Dropdown = styled.div`
   p {
     font-size: 1.5rem;
   }
+
 `;
 
 const AccordionH1 = styled.h1`
 font-size: 2.5rem;
 color: #fff;
-margin-bottom: 64px;
+margin-bottom: auto;
+justify-content: center;
+text-align; center;
 
 @media screen and (max-width: 480x){
   font-size 2rem;
@@ -81,10 +83,13 @@ const AccordionH2 = styled.h2`
   color: white;
 `
 const ContainerH1 = styled.div`
-  position: absolute;
-  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
-  justify-content: center;
-  align-items: center;
+z-index: 1;
+height: 20vh;
+width: 100%;
+max-width: 1100px;
+justify-content: center;
+position: absolute;
+align-items:  center;
 `;
 
 const Accordion = () => {
@@ -104,7 +109,7 @@ const Accordion = () => {
     <IconContext.Provider value={{ color: 'yellow', size: '25px' }}>
             <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour}/>
-              <ContainerH1><AccordionH1>Frequently Asked Questions</AccordionH1></ContainerH1>
+      <ContainerH1><AccordionH1>Frequently Asekd Questions</AccordionH1></ContainerH1>
       <AccordionSection>
         <Container>
           {dataOne.map((item, index) => {

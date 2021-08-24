@@ -11,6 +11,9 @@ import Sidebar from './Sidebar';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
+import styled from 'styled-components';
+
+
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -66,25 +69,29 @@ const sidebar = {
     { title: 'March 2020', url: '#' },
     { title: 'February 2020', url: '#' },
     { title: 'January 2020', url: '#' },
-    { title: 'November 1999', url: '#' },
-    { title: 'October 1999', url: '#' },
-    { title: 'September 1999', url: '#' },
-    { title: 'August 1999', url: '#' },
-    { title: 'July 1999', url: '#' },
-    { title: 'June 1999', url: '#' },
-    { title: 'May 1999', url: '#' },
-    { title: 'April 1999', url: '#' },
   ],
 };
+
+const Wrapper = styled.div`
+display: grid;
+z-index: 1;
+height: 160vh;
+width: 100%;
+max-width: 1100px;
+margin-right: auto;
+margin-left: auto;
+padding: 0 24px;
+justify-content: center;
+`
 
 export default function Blog() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
+    <Wrapper>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Essentials" sections={sections} />
+        <Header title="" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -102,6 +109,6 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
-    </React.Fragment>
+    </Wrapper>
   );
 }

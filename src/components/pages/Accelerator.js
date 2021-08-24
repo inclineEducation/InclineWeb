@@ -20,7 +20,6 @@ export default function Accelerator() {
           <InfoSectionTwo {...homeObjSix} />
           <Timeline />
             <Companies heading='Our Mentors Have Been At' data={companyDataTwo} />
-      <Companies heading='' data={companyDataThree} />
       <Services />
       <Contact />
       
