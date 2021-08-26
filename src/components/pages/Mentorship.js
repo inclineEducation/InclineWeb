@@ -4,7 +4,6 @@ import Services from '../Services/index';
 import Contact from '../Contact/index';
 import Companies from '../InclineFlex/index';
 import { companyDataTwo } from '../InclineFlex/data';
-import { companyDataThree } from '../InclineFlex/data';
 import { HeroSection, HeroSlider, HeroWrapper, HeroImage, HeroContent, HeroSlide} from '../pages/HeroSection';
 import Accordion from '../FAQ/FAQ';
 

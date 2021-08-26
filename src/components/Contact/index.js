@@ -31,7 +31,7 @@ const Title = styled.h1`
     bottom: 0;
     transform: translate(-50%, 0.5rem);
     /* or 100px */
-    border-bottom: 2px solid var(--pink);
+    border-bottom: 2px solid var black;
   }
 `;
 
@@ -41,8 +41,7 @@ const Icons = styled.div`
   a {
     &:hover {
       img {
-        filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
-          brightness(100%) contrast(97%);
+        filter: invert(70%) sepia(87%) saturate(712%) hue-rotate(354deg) brightness(230%) contrast(101%);
       }
     }
     &:not(:last-child) {
@@ -62,15 +61,15 @@ const Form = styled.form`
   input {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
-    background-color: var(--nav2);
+    background-color: black;
     border: none;
     border-radius: 4px;
-    color: #eff7f8;
+    color: white;
     &:active,
     &:focus {
       border: none;
       outline: none;
-      background-color: var(--nav);
+      background-color: black;
     }
     &::placeholder {
       color: #eff7f8;
@@ -83,14 +82,14 @@ const Form = styled.form`
   textarea {
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
-    background-color: var(--nav2);
+    background-color: black;
     border: none;
     border-radius: 4px;
-    color: #eff7f8;
+    color: black;
     margin-bottom: 2rem;
     &:focus,
     &:active {
-      background-color: var(--nav);
+      background-color: black;
     }
     &::placeholder {
       color: #eff7f8;
@@ -99,7 +98,7 @@ const Form = styled.form`
   }
   button {
     padding: 0.8rem 2rem;
-    background-color: var(--white);
+    background-color: white;
     border-radius: 20px;
     font-size: 1.2rem;
     color: #0a0b10;

@@ -4,7 +4,7 @@ import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2,
   TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElement';
 
 const InfoSectionTwo = ({lightBg, id, imgStart, topLine, lightText,
-headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+headline, darkText, description, img, alt, primary, dark, dark2}) => {
   return(
     <>
     <InfoContainer lightBg={lightBg} id={id}>

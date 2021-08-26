@@ -6,13 +6,13 @@ import Contact from '../Contact/index';
 import Services from '../Services/index';
 import Testimonial from '../Testimonial/Carousel';
 import { HeroSection, HeroSlider, HeroWrapper, HeroImage, HeroContent, HeroSlide} from '../pages/HeroSection';
-import InfoPanel from '../Panel/InfoPanel';
+import CompaniesTwo from '../InclineFlex/index';
 
 
 export default function Panels() {
   return (
     <>
-            <HeroSection>
+      <HeroSection>
       <HeroSlider>
                   <HeroWrapper>
           <HeroImage src={require('../../images/group-original.jpg').default}/>
@@ -22,8 +22,8 @@ export default function Panels() {
       </HeroWrapper>
       </HeroSlider>
       </HeroSection>
-      <InfoPanel />
-      <Companies heading='Previous Partners' data={companyDataFour} />
+      
+      <CompaniesTwo heading='Previous Partners' data={companyDataFour} />
       <Services />
       <Testimonial />
       <Contact />

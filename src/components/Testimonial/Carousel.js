@@ -31,7 +31,7 @@ color: white;
   content:"";
   height: 1px;
   width: 50%;
-  position: absolute;
+  position: relative;
   left: 50%;
   bottom: 0;
   border-bottom: 4px solid black;
@@ -75,7 +75,7 @@ class Carousel extends Component {
       slidesToScroll: 1,
       autoplay: true,
       speed: 500,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       cssEase: "linear",
       lazyload: true, 
       initialSlide: 2

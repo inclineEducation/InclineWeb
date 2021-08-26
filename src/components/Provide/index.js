@@ -1,9 +1,9 @@
 import React from 'react';
 import {ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper,ServicesCard, ServicesIcon, ServicesP, ServicesH3} from './ProvideElements';
-import Icon1 from '../../images/organize-resume.svg';
-import Icon2 from '../../images/organize-resume.svg';
-import Icon3 from '../../images/organize-resume.svg';
-import Icon4 from '../../images/organize-resume.svg';
+import Icon1 from '../../images/resume.svg';
+import Icon2 from '../../images/mentorship.svg';
+import Icon3 from '../../images/instructional.svg';
+
 
 const Provide = () => {
   return (

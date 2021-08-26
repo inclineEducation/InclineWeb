@@ -23,6 +23,7 @@ import SigninPage from './components/pages/Signin';
 import SignupPage from './components/pages/Signup';
 import InclineTeam from './components/pages/Team';
 import BlogPost from './components/Blog/Blog Posts/BlogPost';
+import ScrollToTop from './components/ScrollToTop/index';
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <ScrollToTop>
         <Switch>
           <Route path='/home' exact component={Home} />
           <Route path='/about' exact component={About} />
@@ -46,6 +48,7 @@ function App() {
           <Route path='/advisor' exact component={InclineTeam} />
           <Route path='/blogpost' exact component={BlogPost} />
         </Switch>
+        </ScrollToTop>
       </Router>
       <Footer />
     </div>

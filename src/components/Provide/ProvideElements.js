@@ -23,6 +23,7 @@ margin: 0 auto;
 display: grid;
 grid-template-rows: 1fr 1fr 1fr;
 align-items: center;
+justify-content: center;
 grid-gap: 16px;
 padding: 0 50px;
 

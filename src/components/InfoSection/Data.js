@@ -74,7 +74,7 @@ export const homeObjFive = {
   headline: 'Purpose Of This Program',
   description: 'The Incline Education Accelerator Program is a one-of-a-kind program that aims to help 1st year university students across different faculties land an internship. With an excellent team of high performing student mentors and industry professionals, we hope to create a cohort of passionate and driven students ready to take the next step in their careers with our help. The best part? It is completely free!',
   imgStart: false,
-  img: require('../../images/about-us.svg').default,
+  img: require('../../images/support.svg').default,
   alt: 'blank',
   primary: false,
   darkText: false
@@ -96,3 +96,47 @@ export const homeObjSix = {
   darkText: false
 };
 
+export const homeObjSeven = {
+  id: '/',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: '',
+  headline: 'Why Join Incline Education?',
+  description: 'Personal development is ingrained in our culture. Whether you want to learn how to run your own startup or develop your leadership skills, you can rest assured that our team and advisory board will be there to support you.',
+  imgStart: true,
+  img: require('../../images/personal.svg').default,
+  alt: 'blank',
+  primary: true,
+  darkText: true
+};
+
+export const homeObjEight = {
+  id: '/',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: false,
+  topLine: '',
+  headline: 'Who Are We Looking For?',
+  description: 'We are looking for motivated individuals who are passionate about education. At Incline Education, no two team members are alike. Our team consists of students from 8+ countries around the world and 10+ different post-secondary programs.',
+  imgStart: false,
+  img: require('../../images/LookingFor.svg').default,
+  alt: 'blank',
+  primary: false,
+  darkText: false
+};
+
+export const homeObjNine = {
+  id: '/',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: '',
+  headline: 'Job Postings',
+  description: "We're always looking for new talent! Please send your resume and cover letter to humanresources@inclineedu.org!",
+  imgStart: true,
+  img: require('../../images/Send.svg').default,
+  alt: 'blank',
+  primary: true,
+  darkText: true
+};

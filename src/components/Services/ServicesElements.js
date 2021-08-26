@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const ServicesContainer = styled.div`
-height: 800px;
+height: 100vh;
+width: 100vw;
+padding-bottom: 10vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -23,6 +25,7 @@ margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 align-items: center;
+justify-content: center;
 grid-gap: 16px;
 padding: 0 50px;
 
@@ -71,7 +74,8 @@ margin-bottom: 64px;
 `
 export const ServicesH2 = styled.h2`
 font-size:1rem;
-margin-bottom: 10px;
+margin-bottom: 1vh;
+
 `
 
 export const ServicesP = styled.p`

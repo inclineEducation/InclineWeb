@@ -10,11 +10,22 @@ import Provide from '../Provide/index';
 import InfoSection from '../InfoSection/index';
 import InfoSectionTwo from '../InfoSection/index2';
 import { homeObjFive, homeObjSix} from '../InfoSection/Data';
+import { HeroSection, HeroSlider, HeroWrapper, HeroImage, HeroContent, HeroSlide} from '../pages/HeroSection';
+
 
 export default function Accelerator() {
   return (
     <>
-      <h1 className='accelerator'>Accelerator Program</h1>
+      <HeroSection>
+      <HeroSlider>
+                  <HeroWrapper>
+          <HeroImage src={require('../../images/group-original.jpg').default}/>
+          <HeroContent>
+                  <h1 className='home'>Accelerator</h1>
+          </HeroContent>
+      </HeroWrapper>
+      </HeroSlider>
+      </HeroSection>
       <InfoSectionTwo {...homeObjFive} />
           <Provide />
           <InfoSectionTwo {...homeObjSix} />

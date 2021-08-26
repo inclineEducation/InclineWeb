@@ -3,6 +3,8 @@ import { Button } from '../Button';
 import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, 
   TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElement';
 
+  import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText,
 headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
   return(
@@ -16,7 +18,7 @@ headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) =
             <Heading lightText={lightText}>{headline}</Heading>
             <Subtitle darkText={darkText}>{description}</Subtitle>
             <BtnWrap>
-              <Button to='/home'
+              <Button to='/'
               smooth={true}
               duration={500}
               spy={true}
