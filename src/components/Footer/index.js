@@ -1,5 +1,6 @@
 import React from 'react';
-import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterLinkItems, FooterLink} from './FooterElements';
+import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, 
+  FooterLinkTitle, FooterLinkItems, FooterLink, FooterText,} from './FooterElements';
 
 const Footer = () => {
   return (
@@ -8,32 +9,28 @@ const Footer = () => {
     <FooterLinksContainer>
     <FooterLinksWrapper>
     <FooterLinkItems>
-      <FooterLinkTitle>About Us </FooterLinkTitle>
-        <FooterLink to="/signin">How it works</FooterLink>
-        <FooterLink to="/signin">Testimonials</FooterLink>
-        <FooterLink to="/signin">Investors</FooterLink>
-        <FooterLink to="/signin">Career</FooterLink>
-        <FooterLink to="/signin">Terms of Service</FooterLink>
+      <FooterLinkTitle>About Incline Education</FooterLinkTitle>
+        <FooterText>We are a team of university students from various 
+        faculties who have come together for the sole purpose of helping students 
+        achieve more out of their university experience and beyond.</FooterText>
     </FooterLinkItems>
     </FooterLinksWrapper>
         <FooterLinksWrapper>
     <FooterLinkItems>
-      <FooterLinkTitle>About Us </FooterLinkTitle>
-        <FooterLink to="/signin">How it works</FooterLink>
-        <FooterLink to="/signin">Testimonials</FooterLink>
-        <FooterLink to="/signin">Investors</FooterLink>
-        <FooterLink to="/signin">Career</FooterLink>
-        <FooterLink to="/signin">Terms of Service</FooterLink>
+      <FooterLinkTitle>Contact</FooterLinkTitle>
+        <FooterLink to="/signin">Email: contact@inclineedu.org</FooterLink>
+        <FooterLink to="/signin">Facebook: @incline.education</FooterLink>
+        <FooterLink to="/signin">Instagram: @incline.education</FooterLink>
+        <FooterLink to="/signin">LinkedIn: Incline Education</FooterLink>
     </FooterLinkItems>
     </FooterLinksWrapper>
         <FooterLinksWrapper>
     <FooterLinkItems>
-      <FooterLinkTitle>About Us </FooterLinkTitle>
-        <FooterLink to="/signin">How it works</FooterLink>
-        <FooterLink to="/signin">Testimonials</FooterLink>
-        <FooterLink to="/signin">Investors</FooterLink>
-        <FooterLink to="/signin">Career</FooterLink>
-        <FooterLink to="/signin">Terms of Service</FooterLink>
+      <FooterLinkTitle>Quick Links </FooterLinkTitle>
+        <FooterLink to="/about">About</FooterLink>
+        <FooterLink to="/signin">Admin</FooterLink>
+        <FooterLink to="/signin">Terms of Use</FooterLink>
+        <FooterLink to="/signin">Privacy Policy </FooterLink>
     </FooterLinkItems>
     </FooterLinksWrapper>
     </FooterLinksContainer>

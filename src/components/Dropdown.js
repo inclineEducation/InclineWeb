@@ -24,4 +24,8 @@ function Dropdown(props) {
   );
 }
 
+<<<<<<< HEAD:src/components/Dropdown.js
 export default Dropdown;
+=======
+export default Dropdown;
+>>>>>>> d748726 (adds animation to panel component and changes to old navbar):src/components/Dropdown-service.js
