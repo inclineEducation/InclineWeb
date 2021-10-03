@@ -74,7 +74,7 @@ export const homeObjFive = {
   headline: 'Purpose Of This Program',
   description: 'The Incline Education Accelerator Program is a one-of-a-kind program that aims to help 1st year university students across different faculties land an internship. With an excellent team of high performing student mentors and industry professionals, we hope to create a cohort of passionate and driven students ready to take the next step in their careers with our help. The best part? It is completely free!',
   imgStart: false,
-  img: require('../../images/support.svg').default,
+  img: require('../../images/Support.svg').default,
   alt: 'blank',
   primary: false,
   darkText: false

@@ -11,6 +11,7 @@ function Navbar(){
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [drop, setDrop] = useState(false);
+  const [navbar, setNavBar] = useState(false);
 
   const handleClick = () => setClick(!click);
 
@@ -48,9 +49,20 @@ function Navbar(){
     }
   };
 
+  const changeBackground = () => {
+    if(window.scrollY >= 60){
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+
+  }
+
+  window.addEventListener('scroll', changeBackground);
+
   return(
     <>
-    <nav className='navbar' >
+    <nav className={navbar ? 'navbar active' : 'navbar'} >
               <img src={logo} alt="Logo"/>
       <Link to='/' className='navbar-logo'>
         INCLINE EDUCATION
