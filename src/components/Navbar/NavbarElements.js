@@ -6,11 +6,13 @@ export const Nav = styled.nav`
 background: #000;
 height: 80px;
 overflow: hidden;
-position: relative;
+
 display: flex;
 justify-content: space-between;
 padding: 0.5rem calc((100vw - 1000px) / 2);
 z-index: 10;
+position: sticky;
+background-color: transparent;
 `
 export const NavLink = styled(Link)`
 color: #fff;

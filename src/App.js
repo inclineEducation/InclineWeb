@@ -24,6 +24,7 @@ import SignupPage from './components/pages/Signup';
 import InclineTeam from './components/pages/Team';
 import BlogPost from './components/Blog/Blog Posts/BlogPost';
 import ScrollToTop from './components/ScrollToTop/index';
+import { HeroSection, HeroSlider, HeroWrapper, HeroImage, HeroContent, HeroSlide} from './components/pages/HeroSection';
 
 function App() {
   

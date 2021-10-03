@@ -1,11 +1,22 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-  height: 80px;
+  /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);*/
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  z-index: 999999;
+  z-index: 999;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.navbar.active {
+  background-color: black;
+
 }
 
 .navbar-logo {
@@ -81,7 +92,8 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    /*background: #242222;*/
+    background: transparent;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
