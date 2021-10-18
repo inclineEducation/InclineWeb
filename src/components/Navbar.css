@@ -1,10 +1,22 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-  height: 80px;
+  /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);*/
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  z-index: 999;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.navbar.active {
+  background-color: black;
+
 }
 
 .navbar-logo {
@@ -45,7 +57,7 @@
 }
 
 .nav-links:hover {
-  background-color:#edc71f;
+  background-color:#efb300 ;
   border-radius: 6px;
   transition: all 0.2s ease-out;
 }
@@ -80,7 +92,8 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    /*background: #242222;*/
+    background: transparent;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -95,7 +108,7 @@
   }
 
   .nav-links:hover {
-    background-color:#edc71f;
+    background-color:#ffc107;
     border-radius: 0;
   }
 
@@ -128,7 +141,7 @@
     margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
-    background:#edc71f;
+    background:#ffc107;
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
@@ -136,7 +149,7 @@
 
   .nav-links-mobile:hover {
     background: #fff;
-    color:#edc71f;
+    color:#ffc107;
     transition: 250ms;
   }
 

@@ -18,6 +18,13 @@ import InfoSection from './components/InfoSection/index';
 import { homeObjOne, homeObjTwo } from './components/InfoSection/Data';
 import Services from './components/Services/index';
 import Footer from './components/Footer/index';
+import SignIn from './components/Signin/index';
+import SigninPage from './components/pages/Signin';
+import SignupPage from './components/pages/Signup';
+import InclineTeam from './components/pages/Team';
+import BlogPost from './components/Blog/Blog Posts/BlogPost';
+import ScrollToTop from './components/ScrollToTop/index';
+import { HeroSection, HeroSlider, HeroWrapper, HeroImage, HeroContent, HeroSlide} from './components/pages/HeroSection';
 
 function App() {
   
@@ -25,8 +32,9 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <ScrollToTop>
         <Switch>
-          <Route path='/' exact component={Home} />
+          <Route path='/home' exact component={Home} />
           <Route path='/about' exact component={About} />
           <Route path='/contact-us' exact component={ContactUs} />
           <Route path='/accelerator' exact component={Accelerator} />
@@ -35,11 +43,14 @@ function App() {
           <Route path='/essentials' exact component={Essentials} />
           <Route path='/incline-education' exact component={InclineEducation} />
           <Route path='/join-us' exact component={JoinUs} />
+          <Route path='/signin' exact component={SigninPage}/>
+          <Route path='/signup' exact component={SignupPage}/>
+          <Route path='/team' exact component={InclineTeam}/>
+          <Route path='/advisor' exact component={InclineTeam} />
+          <Route path='/blogpost' exact component={BlogPost} />
         </Switch>
+        </ScrollToTop>
       </Router>
-      <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
-      <Services />
       <Footer />
     </div>
   );

@@ -4,15 +4,19 @@
   top: 80px;
   list-styles: none;
   text-align: start;
+  navpro-overlay: true;
+  z-index: 1000;
+  list-style-type: none;
 }
 
 .dropdown-menu li {
   background: #fff;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .dropdown-menu li:hover {
-  background:#edc71f;
+  background: #edc71f;
 }
 
 .dropdown-menu.clicked {
