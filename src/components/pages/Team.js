@@ -8,14 +8,14 @@ const InclineTeam = () => {
     <>
     <HeroSection>
       <HeroSlider>
-                  <HeroWrapper>
+        <HeroWrapper>
           <HeroImage src={require('../../images/group-original.jpg').default}/>
           <HeroContent>
-                  <h1 className='home'>TEAM</h1>
+            <h1 className='home'>TEAM</h1>
           </HeroContent>
-      </HeroWrapper>
+        </HeroWrapper>
       </HeroSlider>
-      </HeroSection>
+    </HeroSection>
     <Team />
     <AdvisorTeam />
     </>
