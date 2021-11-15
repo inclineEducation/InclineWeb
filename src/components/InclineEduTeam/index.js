@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper,ServicesCard, ServicesIcon, ServicesP, ServicesH3} from './TeamElements';
 import Anushka from '../../images/team/Anushka.jpg';
 import Andy from '../../images/team/Andy.jpg';
@@ -29,6 +29,29 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const InclineTeam = () => {
+
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+
+  useEffect(() =>{ fetchTeam().then(
+    (result) => {
+      setIsLoaded(true);
+      console.log(result);
+      setItems(result);
+    },
+    (error) => {
+      setIsLoaded(true);
+      setError(error)
+    }
+  );
+  }, []);
+
+  function fetchTeam() {
+    return fetch(window.location.protocol + "//" + window.location.hostname + ":" + window.location.port +  "/api/team")
+        .then((response) => response.json())
+  }
+
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
     setShowModal(prev => !prev);
@@ -38,80 +61,16 @@ const InclineTeam = () => {
     <ServicesContainer id="team">
       <ServicesH1>Meet Our Team</ServicesH1>
       <ServicesWrapper>
-        <ServicesCard onClick={openModal}>
-          <ServicesIcon src={Andy}/>
-          <ServicesP>Andy Chung</ServicesP>
-        </ServicesCard>
         <Modal showModal={showModal} setShowModal={setShowModal}></Modal>
-      <GlobalStyle />
-                <ServicesCard>
-          <ServicesIcon src={Anushka}/>
-          <ServicesP>Anushka Gupta</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={Chris}/>
-          <ServicesP>Chris Ng</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={Danilo}/>
-          <ServicesP>Danilo Angulo-Molina</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={Ella}/>
-          <ServicesP>Ella Koay</ServicesP>
-        </ServicesCard>    
-        <ServicesCard>
-          <ServicesIcon src={Grace}/>
-          <ServicesP>Grace Zhang</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={Hasan}/>
-          <ServicesP>Hasan Altaf</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Anushka}/>
-          <ServicesP>Ihor Parkhomenko</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Jack}/>
-          <ServicesP>Jack He</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Anushka}/>
-          <ServicesP>Keana Yu</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Anushka}/>
-          <ServicesP>Mark Long</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Matheson}/>
-          <ServicesP>Matheson Parmar</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Michelle}/>
-          <ServicesP>Michelle Lin</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Nusair}/>
-          <ServicesP>Nusair Islam</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Roy}/>
-          <ServicesP>Roy Du</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Selena}/>
-          <ServicesP>Selena Yang</ServicesP>
-        </ServicesCard> 
-        <ServicesCard>
-          <ServicesIcon src={Talisha}/>
-          <ServicesP>Talisha Griebach</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-          <ServicesIcon src={Varun}/>
-          <ServicesP>Varun Nair</ServicesP>
-        </ServicesCard>             
+        <GlobalStyle />
+        {
+        items.map(item => (
+          <ServicesCard onClick={openModal}>
+            <ServicesIcon src={"/images/team/" + item.name + ".jpg"}/>
+            <ServicesP>{item.name}</ServicesP>
+          </ServicesCard>
+        ))
+        }
       </ServicesWrapper>
     </ServicesContainer>
 
